@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="Anton Patricio"/>
+    <meta name="description" content="Investigation & Planning Section"/>
+    <meta name="keywords" content="Investigation, Planning, Section"/>
+    <title>Investigation & Planning</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+      <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Meeting Brief</a>
+                <a href="Investigate.html" class="active">Investigation & Planning</a>
+                <a href="PlanDesign.html">Design</a>
+                <a href="Implement.html">Implementation</a>
+                <a href="Testing.html" >Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <!-- Dropdown menu for small screens -->
+            <div class="dropdown" id="dropdownMenu">
+                <a href="index.html">Meeting Brief</a>
+                <a href="Investigate.html" class="active">Investigation & Planning</a>
+                <a href="PlanDesign.html">Design</a>
+                <a href="Implement.html">Implementation</a>
+                <a href="Testing.html">Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+            </div>
+        </nav>
+<div style="padding:0 16px;">
+  
+  <h2>Investigation  (400 words)</h2>
+  <div class="information-heading">Possible Datasets</div>
+  <div class="information">
+    <a href="https://data.gov.ie/dataset/asa03-air-and-sea-travel">Air And Sea Travel WorldWide</a>
+    <br>
+    I picked this dataset as I am interested in transport, especially in airports. This dataset contains data about the amount of people leaving and arriving in Ireland from 2010 until 2023 and the country. However only a LIMITED amount of countries is inputted into the dataset.
+    <br><br>
+    <a href="https://data.gov.ie/dataset/tmq12-overseas-trips-to-ireland">Overseas Trips To Ireland</a>
+    <br>
+    Like the previous dataset, I chose this data since it's based on transport. The dataset shows information on the amount of people coming from overseas into Ireland. However, like the previous dataset, the amount of countries that are named are very LIMITED and the dates of when the values were recorded are difficult to READ.
+    <br><br>
+    <a href="https://www.kaggle.com/datasets/umeradnaan/tourism-dataset">Tourism Dataset WorldWide</a>
+    <br>
+    I am curious about the tourism sector which is why I picked this dataset. From this dataset I was able to learn about the amount of revenue earned from certain locations throughout the whole world. But the flaws identified is that the date of each data is NOT recorded and the locations are NOT identifiable.
+  </div>
+  <br><br>
+  <div class="information-heading">Chosen Dataset</div>
+  <div class="information">
+    <a href="https://data.gov.ie/dataset/tam08-passengers-handled-by-main-airports">Passengers Handled By Irish Airports</a>
+    <br>
+    I chose this dataset as I found it to be the best suited based on the area that I am interested in ( Transport / Tourism ).This dataset contains the values of passengers coming to and leaving from Irish airports. The dates are clearly labelled, monthly, from 2019 until 2024 that will make detailed graphs for analysis. 
+    <br><br>
+    One thing that I have to look at is that the value from Dublin airport is far greater than the rest of the airports which makes it difficult to read the overall graph. The total values are also recorded monthly so I will find ways to exclude these for alternate graphs.
+  </div>
+  <br><br>
+  <div class="information-heading">Existing Solutions</div>
+  <div class="information">
+    Other than official airport apps, like Dublin Airport and Shannon Airport, that only show information on future flights. There is no existing app that showcases the amount of passengers being handled.
+    <br><br>
+    However I was able to find a website created by CSO which shows information based on the amount of passengers handled throughout the years from Irish airports. It displays the information in texts and in graphs.
+    <br><br>
+    My system will use different graph types and information to display onto my system. I will make the overall presentation of the system distinct from the CSO website.
+  </div>
+</div>
+
+<footer>
+  <a>&#169; Exam Number: 220166 - 2025</a>
+</footer>
+
+<!-- Back-to-top button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679; Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>

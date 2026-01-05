@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="Anton Patricio"/>
+    <meta name="description" content="Design Section"/>
+    <meta name="keywords" content="Design, Section"/>
+    <title>Design</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    
+    <body>
+      <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation & Planning</a>
+                <a href="PlanDesign.html" class="active">Design</a>
+                <a href="Implement.html">Implementation</a>
+                <a href="Testing.html" >Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <!-- Dropdown menu for small screens -->
+            <div class="dropdown" id="dropdownMenu">
+                <a href="index.html">Meeting Brief</a>
+                <a href="Investigate.html">Investigation & Planning</a>
+                <a href="PlanDesign.html" class="active">Design</a>
+                <a href="Implement.html">Implementation</a>
+                <a href="Testing.html">Testing</a>
+                <a href="Evaluation.html">Evaluation</a>
+                <a href="References.html">References</a>
+            </div>
+        </nav>
+
+<div style="padding:0 16px;">
+
+  <h2>Design (400 words)</h2>
+  <div class="information-heading">Project Design</div>
+  <div class="information">
+    My project will be designed to display information and graphs based on my chosen dataset. The user will be able to navigate and interact with the system, and view all the necessary information.
+    <br><br>
+    To achieve this, I will use HTML, CSS, and JavaScript to create a presentable system to the user. Python will be used to extract and store specific information, and to perform dataset analytics which will form graphs that will be presented onto the system. 
+  </div>
+  <br><br>
+  <div class="information-heading">Brief Requirements</div>
+  <div class="information">
+    <b>BR 1 -</b> After finding a suitable dataset from a reliable source, I will use Python to clean the dataset from unnecessary information and make it easier to use.
+    <br><br>
+    <b>BR 2 -</b> Using Plotly in Python, graphs can be generated with the dataset variables. I will analyse each graph and ensure all labels are correctly placed. I will use functions to find key values, like Max, Mean, Median, etc. which I will store into a dictionary.
+    <br><br>
+    <b>BR 3 -</b> On VSCode, I will use HTML to input information and visualisations onto the system, and CSS to design the appearance. JavaScript will be used to make the system interactive and dynamic.
+    <br><br><br>
+
+    <b>AR 1 -</b> Using Plotly in Python, I can make the graphs to be interactive by allowing the user to highlight legends and hover for details, including an animated graph.
+    <br><br>
+    <b>AR 2 -</b> Using JavasScript, I will present a form that will ask the user questions on at least 3 different data types. The data will be checked for missing values and stored. The summarised data will then be displayed on the website.
+    <br><br>
+    <b>AR 3 -</b> By creating a separate HTML file, I will display information based on what I’ve learned from analysing my dataset, then my recommendations at the bottom.
+  </div>
+  <br><br>
+  <div class="information-heading">Technology / Software Used</div>
+  <div class="information">
+    Thonny was used as my programming platform for Python. I chose Python because it is capable of using a variety of libraries for data analysing and visualisation, and its suitability for web development.
+    <br><br>
+    Pandas was used to extract, clean, and store my dataset. Using Plotly in Python I created a variety of visualisations for analysis and presentation on my website.
+    <br><br>
+    VS Code was used as my web development platform. This allowed me to use HTML, CSS, and JavaScript. HTML and CSS allowed me to input my information and visualisations on my system and make them look presentable to the users. JavaScript added interactive features to the system and handled validation of the form inputs, ensuring good quality data.
+  </div>
+  <br><br>
+  <div class="information-heading">Form Validation Flowchart</div>
+  <img src="Images/FormValidation.PNG" alt="Form Validation Flowchart" width="500" height="600">
+  <br><br>
+  <div class="information-heading">Algorithms Flowchart</div>
+  <img src="Images/Algorithms1.PNG" alt="Algorithms" width="500" height="600">
+  <img src="Images/Algorithms2.PNG" alt="Algorithms" width="500" height="600">
+  <br><br>
+  <div class="information-heading">Requirements Flowchart</div>
+  <img src="Images/Requirements.PNG" alt="Algorithms" width="500" height="600">
+  <br><br>
+  <div class="information-heading">Website Wireframes</div>
+  <img src="Images/BasicWireframe1.png" alt="BasicWireframe1" width="500" height="600">
+  <img src="Images/BasicWireframe2.png" alt="BasicWireframe2" width="500" height="600">
+  <img src="Images/FeedbackWireframe.png" alt="FeedbackWireframe" width="500" height="600">
+  <br><br>
+  <div class="information-heading">Design Principles</div>
+  <div class="information">
+    <ul>
+      <li><b>Equitable Use - </b>Users can view different types of graphs and interact with them to gain different perspectives.</li>
+      <li><b>Flexibility In Use - </b>A clear navigation bar will be provided on the page at all times to help users easily find their way around the website.</li>
+      <li><b>Simple And Intuitive Use - </b>A consistent layout will be maintained throughout all the pages to provide a predictable user experience.</li>
+      <li><b>Perceptible Information - </b>Easy to read fonts and wide spacing are used to avoid visual clutter and improve readability.</li>
+      <li><b>Tolerance For Error - </b>A pop-up will appear that will provide a specific message on the question you missed on the form.</li>
+      <li><b>Low Physical Effort - </b>The navigation menu provided will be clear and easy to use, reducing the need for excessive mouse movements or clicks.</li>
+      <li><b>Size And Space For Approach And Use - </b>The size of the visualisations and font sizes change with page size ensuring enhanced readability.</li>
+    </ul>
+    I believe I have a good user interface as I have taken into consideration every Universal Design Principle while I was designing my website.
+  </div>
+</div>
+
+<footer>
+  <a>&#169; Exam Number: 220166 - 2025</a>
+</footer>
+
+<!-- Back-to-top button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top">&#8679; Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>
