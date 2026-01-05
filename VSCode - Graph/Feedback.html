@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Anton Patricio"/>
+        <meta name="description" content="Feedback Information"/>
+        <meta name="keywords" content="Feedback, Airport, Information"/>
+        <title>Feedback</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="airportScript.js"></script>
+    </head>
+
+    <body> 
+        <header class="header">
+            <div class="home" onclick="goToPlace('MainWebsite')">Home</div>
+            <div class="title">Feedback</div>
+            <div class="feedback" onclick="goToPlace('Feedback')">Feedback</div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="airport" onclick="goToPlace('Dublin')">
+                Dublin
+            </div>
+            <div class="airport" onclick="goToPlace('Cork')">
+                Cork
+            </div>
+            <div class="airport" onclick="goToPlace('Shannon')">
+                Shannon
+            </div>
+            <div class="airport" onclick="goToPlace('Knock')">
+                Knock
+            </div>
+            <div class="airport" onclick="goToPlace('Kerry')">
+                Kerry
+            </div>
+        </nav>
+    
+        <main>
+            <div class="feedback-title">Survey</div>
+            <div class="feedback-area">
+                <div class="form-grid">
+                    <form id="surveyForm"> 
+                        <div class="form">
+                            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+                        </div>
+                        <div class="form">
+                            <input type="text" id="txtTravel" placeholder="How many flights do you take annually?" />
+                        </div>
+                        <div class="form">
+                            <div class="question-text">
+                                Did you use air travel during the COVID-19 Pandemic?
+                            </div>
+                            <input type="radio" id="rd1" value="Yes" />Yes
+                            <input type="radio" id="rd2" value="No" />No
+                        </div>
+                        <div class="form">
+                            <select id="selProvince">
+                                <option selected value="">-- Choose your province --</option>
+                                <option value="Connacht">Connacht</option>
+                                <option value="Leinster">Leinster</option>
+                                <option value="Munster">Munster</option>
+                                <option value="Ulster">Ulster</option>
+                                <option value="Other">Other (Outside of Ireland)</option>
+                            </select>
+                        </div>
+                        <div class="form">
+                            <select id="selAirport">
+                                <option selected value="">-- Preferred Airport For Air Travel --</option>
+                                <option value="Dublin">Dublin Airport</option>
+                                <option value="Cork">Cork Airport</option>
+                                <option value="Shannon">Shannon</option>
+                                <option value="Knock">Knock Airport</option>
+                                <option value="Kerry">Kerry Airport</option>
+                            </select>
+                        </div>
+                        <div class="form">
+                            <textarea class="msg-box" id="msg" placeholder="Explain Your Reason For Choosing That Airport ..."></textarea>
+                        </div>
+                        <div class="form-button">
+                        <button class="submit-button" type="button" onclick="saveFile()">Submit Feedback</button> 
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            <div class="feedback-title">Results</div>
+                <div class="feedback-area">
+                    <div class="form-grid">
+                        <h3>Previous Entries</h3>
+                        <textarea class="displayArea" id="displayArea" readonly></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>

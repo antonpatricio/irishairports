@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Anton Patricio"/>
+        <meta name="description" content="Irish Airports Dataset"/>
+        <meta name="keywords" content="Irish, Airports, Dataset"/>
+        <title>Irish Airports</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="airportScript.js"></script>
+    </head>
+
+    <body> 
+        <header class="header">
+            <div class="home" onclick="goToPlace('MainWebsite')">Home</div>
+            <div class="title">Irish Airports</div>
+            <div class="feedback" onclick="goToPlace('Feedback')">Feedback</div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="airport" onclick="goToPlace('Dublin')">
+                Dublin
+            </div>
+            <div class="airport" onclick="goToPlace('Cork')">
+                Cork
+            </div>
+            <div class="airport" onclick="goToPlace('Shannon')">
+                Shannon
+            </div>
+            <div class="airport" onclick="goToPlace('Knock')">
+                Knock
+            </div>
+            <div class="airport" onclick="goToPlace('Kerry')">
+                Kerry
+            </div>
+        </nav>
+    
+        <main>
+            <section class="main-grid">
+                <div class="information-grid">
+                    <div class="information-heading">Data Information</div>
+                    <div class="information">
+                        <ul>
+                            <li>Contains data on the amount of passengers into and out of the different airports in Ireland</li>
+                            <li>Data collected dates between January 2019 until November 2024</li>
+                            <li>Only data on Irish Airports are collected ( Dublin, Cork, Shannon, Knock, Kerry )</li>
+                            <li>Total amount of passengers per month are recorded into the dataset</li>
+                        </ul>
+
+                        <p><i>**<b>NOTE:</b> GRAPHS ARE INTERACTABLE TO ALLOW USERS TO EXCLUDE THE DOMINANT DUBLIN VALUES AND VIEW OTHER AIRPORT VALUES MORE VISIBLY</i></p>
+                    </div>
+                </div>
+                <div class="airport-image-grid">
+                    <img src="Airport Images/Aer Lingus.avif" class="airport-image">
+                </div>
+            </section>
+            <div class="information-grid2">
+                <div class="information-heading">Information: Pie Graph</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            The most striking feature is the massive 85.6% held by Dublin Airport. This clearly shows its position as a primary hub
+                            for air travel in Ireland. This demonstrates its role in handling the vast majority of air traffic in the country,
+                            emphasizing its national and international importance.
+                        </li>
+                        <li>
+                            The remaining airports (Cork, Shannon, Knock, and Kerry) all have significantly smaller slices on the pie graph. This
+                            highlights the concentration of air travel in Dublin. While these airports serve vital regional roles, their passenger
+                            numbers are shortened by Dublin.
+                        </li>
+                        <li>
+                            With 6.81%, Cork Airport has the second-largest slice on the pie graph. While still much smaller than Dublin, it stands out
+                            as the busiest of the regional airports. It shows its significance as a gateway for the south of Ireland.
+                        </li>
+                    </ul>
+                    <p><b>Conclusion:</b></p>
+                    <p>
+                        The pie chart is evidently useful as it demonstrates the constrast between Dublin Airport and the rest of the airports in Ireland.
+                        This stark contrast could lead to a discussion about regional development and expansion for these airports. However while their
+                        slices are small, they serve an important role in providing air access to specific regions of Ireland, supporting local economies and tourism.
+                    </p>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <iframe src="Graphs/Airport_pie_plot.html" width="100%" height="500"></iframe>
+            </div>
+
+            <div class="information-grid2">
+                <div class="information-heading">Information: Bar Graph</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Like the pie graph, the bar graph clearly demonstrates the dominance of Dublin Airport in terms of passenger numbers. The tallest
+                            bar for Dublin towers over all the other airports which reinforces its primary role in Irish aviation. The graph allows for a clear
+                            ranking of airports by passenger volume: Dublin, followed by Cork, then Shannon, Knock, and Kerry.
+                        </li>
+                        <li>
+                            Unlike the pie chart, this bar graph animates through the dates January 2019 until November 2024 which vividly shows the increasing
+                            and decreasing passenger total for each month in that period. This allows further analysis to see the passenger total for a specific
+                            airport during a certain time period.
+                        </li>
+                        <li>
+                            Around April 2020 until June 2021, there was almost zero passengers flying in and out of Ireland. Even after June 2021, the amount of 
+                            passengers taking flights had decreased significantly. This was during the time when Ireland had to go into lockdown due to the Covid-19 
+                            pandemic which closed many businesses, including airports.
+                        </li>
+                    </ul>
+                    <p><b>Conclusion:</b></p>
+                    <p>
+                        From this animated bar graph, the total amount of passengers being handled each month can be identified clearly. The animation shows how badly airports
+                        across Ireland were affected by the Covid-19 pandemic, especially for Dublin Airport. This demonstrates the financial losses experienced by people
+                        in the aviation industry and the amount of jobs lost for those in this sector.
+                    </p>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <iframe src="Graphs/Airport_animation_plot.html" width="100%" height="500"></iframe>
+            </div>
+
+            <div class="information-grid2">
+                <div class="information-heading">Information: Line Graph</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            The most prominent feature is the sharp drop in passenger numbers across all airports around March 2020. This further backs-up my previous analysis
+                            on the bar graph where it visually demonstrates the devastating impact of the Covid-19 pandemic and the travel restrictions on air travel in Ireland.
+                        </li>
+                        <li>
+                            The graph shows the gradual recovery of passenger numbers after the initial plunge. However, it is clearly shown that the recovery is uneven and takes time.
+                            The lines trend upwards, but it's important to note that the levels are not consistently back to pre-pandemic levels, especially for the regional airports.
+                        </li>
+                        <li>
+                            Aside from Covid-19, the bar graph also demonstrates recurring patterns suggesting potential seasonality in air travel. There are peaks and troughs visibly shown 
+                            that may correspond to holiday periods or seasonal travel trends, especially during June, July and August where students are on their summer holidays.
+                        </li>
+                    </ul>
+                    <p><b>Conclusion:</b></p>
+                    <p>
+                        The line graph provides clear information for analysis on passenger numbers at Irish Airports. The devastating impact of Covid-19, the post-pandemic recovery, and 
+                        the seasonal trends were all easily identified from the graph making it extremely useful. It underscores the challenges the challenges and resilience of Irish aviation.
+                    </p>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <iframe src="Graphs/Airport_line_plot.html" width="100%" height="500"></iframe>
+            </div>
+        </main>
+    </body>
+    
+</html>

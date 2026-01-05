@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Anton Patricio"/>
+        <meta name="description" content="Dublin Airport Information"/>
+        <meta name="keywords" content="Dublin, Airport, Information"/>
+        <title>Dublin Airport</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="airportScript.js"></script>
+    </head>
+
+    <body> 
+        <header class="header">
+            <div class="home" onclick="goToPlace('MainWebsite')">Home</div>
+            <div class="title">Dublin Airport</div>
+            <div class="feedback" onclick="goToPlace('Feedback')">Feedback</div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="airport" onclick="goToPlace('Dublin')">
+                Dublin
+            </div>
+            <div class="airport" onclick="goToPlace('Cork')">
+                Cork
+            </div>
+            <div class="airport" onclick="goToPlace('Shannon')">
+                Shannon
+            </div>
+            <div class="airport" onclick="goToPlace('Knock')">
+                Knock
+            </div>
+            <div class="airport" onclick="goToPlace('Kerry')">
+                Kerry
+            </div>
+        </nav>
+
+        <main>
+            <section class="main-grid">
+                <div class="information-grid">
+                    <div class="information-heading">About Dublin Airport ( DUB )</div>
+                    <div class="information">
+                        Dublin Airport, also know as DUB, is Ireland's main international gateway.
+                        It is located 10km north of Dublin City, it serves as a major hub for Aer Lingus
+                        and Ryanair, offering flights to destinations across Europe, North America, and
+                        the Middle East. With two main terminals, Dublin Airport caters millions of passengers
+                        annually, providing a range of services and facilities including shops, restaurants and lounges.
+                        <br><br>
+                        As Ireland's largest and busiest airport, Dublin Airport serves as a vital hub for international
+                        travel and trade, connecting Ireland with destinations across the globe.
+                    </div>
+                </div>
+                <div class="airport-image-grid">
+                    <img src="Airport Images/DublinAirport.jpg" class="airport-image">
+                </div>
+            </section>
+            <div class="information-grid2">
+                <div class="information-heading">Information: Pre-Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Prior to March 2020, the monthly passenger numbers at Dublin Airport were consistent and high.
+                            There are signs of peak trends in the summer months, likely due to holiday travel, and dips in trends 
+                            in the winter season. The graphs shows Dublin Airport reaching it's peak at 3.43 Million passengers 
+                            in July for the year 2019.
+                        </li>
+                        <li>
+                            The scatter plot shown reinforces the stability shown in the line graph and bar graph. The concentration 
+                            of the graph indicates that Dublin Airport was consistently busy pre-pandemic. It is cleear that passenger 
+                            numbers remained high and predictable towards early 2020.
+                        </li>
+                        <li>
+                            The sharp drop from 2 Million to 1 Million in passenger numbers in the graphs starting in March 2020 clearly highlights
+                            the drastic impact of the COVID-19 pandemic and the introduction of the travel restrictions. This demonstrates just how
+                            robust the airport's traffic was before the pandemic hit.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Dublin_Bar.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Information: COVID-19 Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            The most striking feature shown in the graphs is the sudden plunge in passenger numbers starting in March 2020, where 
+                            it nearly halved the passenger total in the previous month (February). This coincides with the onset of the COVID-19
+                            pandemic and the implementation of travel restrictions and lockdowns globally.
+                        </li>
+                        <li>
+                            Throughout the rest of 2020 and into 2021, passenger numbers remained lower than pre-pandemic levels. In July of 2020,
+                            the passenger totalled to 374,443 which compared to last years total, 3.43 Million, shows the critical impact of the pandemic
+                            on air travel due to border closures and safety concerns.
+                        </li>
+                        <li>
+                            However while still generally low, it is evident that there are minor fluctuations in passenger numbers during the pandemic 
+                            period. These likely correspond to periods of restrictions being eased or increased travel during holiday seasons, followed by
+                            renewed restrictions as case numbers fluctuated due to this increase in air travel.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Dublin_Scatter.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Information: Post-Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                           From the low point in early 2021, we can see a gradual upward trend in passenger numbers. In 2021, passenger numbers peaked in
+                           October where numbers reached to 1.54 Million passengers which compared to 2020's peak month, August, where it reached 509,000,
+                           shows how travel restrictions are being eased and vaccination rate increasing allowing people to travel again.
+                        </li>
+                        <li>
+                            However, it's important to note that even by January 2022, passenger numbers peaked at only 969,467 which shows that Dublin Airport 
+                            has not fully recovered to pre-pandemic levels. This indicates that the aviation industry still faced challenges during this period 
+                            and was still ongoing recovery.
+                        </li>
+                        <li>
+                            It is until January 2023 passenger numbers seem to have recovered significantly and is evidently shown to
+                            have slightly increased from the Pre-Pandemic period. In August 2024, Dublin Airport reached a peak of 3.63 Million which is the
+                            highest point on the graphs. This points out the increased demand in air travel for people all over Ireland.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Dublin_Line.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Recommendation</div>
+                <div class="information">
+                    <ol>
+                        <li>
+                            From reviewing the data, there is clearly trends for seasonality. Dublin Airport should optimize staffing levels to match the levels of
+                            passengers coming into the airport. By increasing staff during peak summer months and reducing staff during the off-season, Dublin Airport 
+                            can minimise their costs for staffing and have smoother staff management throughout the year.
+                        </li>
+                        <li>
+                            Given that the peak number of the data was during August 2024, it leads us to expect that the number of passengers for August 2025 will be even 
+                            greater than 2024. Dublin Airport should consider future infrastructure expansive to accomodate the increased traffic. This could include expanding 
+                            terminal capacity, adding gates, or improving baggage handling systems.
+                        </li>
+                        <li>
+                            Marketing campaigns can be developed by travel agencies to encourage travel during the off-season to smooth out demand and utilise airport capacity
+                            more efficiently. This could include promoting special events, offering discounts, or bringing in tour operators. They can also highlight the airport's 
+                            successful recovery from the COVID-19 Pandemic to reassure travelers to return to Dublin Airport.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
