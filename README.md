@@ -1,3 +1,3 @@
 # Irish Airports
 Project: The Effects of COVID-19 on Irish Airports
-Link: https://antonpatricio.github.io/irishairports/
+https://antonpatricio.github.io/irishairports/
