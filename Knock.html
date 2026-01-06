@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Anton Patricio"/>
+        <meta name="description" content="Knock Airport Information"/>
+        <meta name="keywords" content="Knock, Airport, Information"/>
+        <title>Knock Airport</title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <script src="airportScript.js"></script>
+    </head>
+
+    <body> 
+        <header class="header">
+            <div class="home" onclick="goToPlace('index')">Home</div>
+            <div class="title">Knock Airport</div>
+            <div class="feedback" onclick="goToPlace('Feedback')">Feedback</div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="airport" onclick="goToPlace('Dublin')">
+                Dublin
+            </div>
+            <div class="airport" onclick="goToPlace('Cork')">
+                Cork
+            </div>
+            <div class="airport" onclick="goToPlace('Shannon')">
+                Shannon
+            </div>
+            <div class="airport" onclick="goToPlace('Knock')">
+                Knock
+            </div>
+            <div class="airport" onclick="goToPlace('Kerry')">
+                Kerry
+            </div>
+        </nav>
+    
+        <main>
+            <section class="main-grid">
+                <div class="information-grid">
+                    <div class="information-heading">About Knock Airport ( NOC )</div>
+                    <div class="information">
+                        Ireland West Airport ( Knock ), also known as NOC, is a growing international airport serving
+                        the west and northwest of Ireland. It is located in County Mayo and offeres a range of domestic
+                        and international flights, primarily within Europe and the UK. Knock Airport plays a vital role
+                        in providing a convenient gateway for those living in the west and northwest, and boosting the local
+                        economy through tourism and connectivity.
+                        <br><br>
+                        They are focusing on expanding its route network and improving facilities to enchance the passengers
+                        experience and support future growth in the region.
+                    </div>
+                </div>
+                <div class="airport-image-grid">
+                    <img src="Airport Images/KnockAirport.webp" class="airport-image">
+                </div>
+            </section>
+            <div class="information-grid2">
+                <div class="information-heading">Information: Pre-Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            Prior to March 2020, Knock Airport experienced consistently high monthly passenger numbers. There is seasonal patterns 
+                            evident with passenger traffic peaking during the summer month, August 2019 where there was a total of 94,907 passengers,
+                            likely driven by leisure travel, holiday periods, and tourist activity. Conversely, troughs are seen during the winter month 
+                            December 2019 where there were only 52,899 passengers.
+                        </li>
+                        <li>
+                            The scatter plot shown reinforces the stability shown in the line graph and bar graph. The concentration 
+                            of the graph indicates that Knock Airport was relatively busy pre-pandemic. It is cleear that passenger 
+                            numbers remained high and predictable towards early 2020.
+                        </li>
+                        <li>
+                            The sharp drop from 45,263 to 22,436 in passenger numbers in the graphs starting in March 2020 clearly highlights
+                            the drastic impact of the COVID-19 pandemic and the introduction of the travel restrictions. This disruption altered
+                            the trends of the passenger numbers and shows a massive contrast to the pre-pandemic period.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Knock_Bar.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Information: COVID-19 Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            The most striking feature shown in the graphs is the sudden plunge in passenger numbers starting in March 2020, where 
+                            it nearly halved the passenger total in the previous month (February). This coincides with the onset of the COVID-19
+                            pandemic and the implementation of travel restrictions and lockdowns globally.
+                        </li>
+                        <li>
+                            Throughout the rest of 2020 and into 2021, passenger numbers remained way lower than pre-pandemic levels and at times had 0 passengers. In August of 2020,
+                            the passenger totalled to 13,707 which compared to last years total, 94,907, shows the critical impact of the pandemic
+                            on air travel due to border closures and safety concerns.
+                        </li>
+                        <li>
+                            However while still generally low, it is evident that there are minor fluctuations in passenger numbers during the pandemic 
+                            period. These likely correspond to periods of restrictions being eased or increased travel during holiday seasons, followed by
+                            renewed restrictions as case numbers fluctuated due to this increase in air travel.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Knock_Scatter.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Information: Post-Pandemic</div>
+                <div class="information">
+                    <ul>
+                        <li>
+                            From the low point in the end of 2021, we can see a gradual upward trend in passenger numbers. In 2021, passenger numbers peaked in
+                            October where numbers reached to 42,943 passengers which compared to 2020's peak month, August, where it reached 13,707,
+                            shows how travel restrictions are being eased and vaccination rate increasing allowing people to travel again.
+                        </li>
+                        <li>
+                            However, it's important to note that even by January 2022, passenger numbers peaked at only 13,820 which shows that Knock Airport 
+                            has not fully recovered to pre-pandemic levels. This indicates that the aviation industry still faced challenges during this period 
+                            and was still ongoing recovery.
+                        </li>
+                        <li>
+                            It is until April 2023 passenger numbers seem to have recovered significantly and is evidently shown to
+                            have slightly increased from the Pre-Pandemic period. In August 2023, Knock Airport reached a peak of 101,736 which is the
+                            highest point on the graphs. This points out the increased demand in air travel for people in Ireland.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="graph-grid">
+                <img src="Graph Images/Knock_Line.png">
+            </div>
+            <div class="information-grid2">
+                <div class="information-heading">Recommendation</div>
+                <div class="information">
+                    <ol>
+                        <li>
+                            Knock Airport evidently carries a relatively smaller amount of passengers compared to Dublin Airport and Cork Airport, consideration into future infrastructure
+                            expansion will make it more appealing for travelers to go to the airport and will bring upward trends in future datasets. Expansions can
+                            include expanding the terminal capacity, adding gates, or improving baggage handling systems.
+                        </li>
+                        <li>
+                            Given that the peak number of the data was during August 2023, it shows that the passenger trends are not increasing massively annually. Knock Airport should
+                            consider future infrastructure expansive to attract more travelers to the airport. This could include expanding terminal capacity, adding gates, or improving
+                            baggage handling systems.
+                        </li>
+                        <li>
+                            Attracting new airlines and routes will be essential in the growth of Knock Airport. By expanding the airport's connectivity, the people 
+                            in the region are given more opportunities to go to a closer airport for their travels instead of going all the way to Dublin Airport. By 
+                            introducing new routes, more tourists will flock the region which will boost their economy.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+    </body>
+    
+</html>
